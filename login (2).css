@@ -1,0 +1,114 @@
+body{
+    margin:0px;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:url('https://images.pexels.com/photos/18234216/pexels-photo-18234216/free-photo-of-sings-of-the-side-of-a-train.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center;
+}
+.intro{
+        color:white;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding:20px 15px;
+        background-image:linear-gradient(45deg,rgb(0, 128, 128),rgb(0, 57, 155));
+}
+h1{
+    margin:0px;
+    padding:10px 30px;
+}
+.users{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    padding:10% 40%;
+}
+.login{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    border-radius:10px;
+    z-index:1;
+    background-image:linear-gradient(45deg,rgb(0, 128, 128),rgb(0, 80, 155));
+}
+.login > div{
+    padding:20px 40px;
+}
+
+.services > div{
+    width:200px;
+    padding:20px;
+}
+button{
+    width:120px;
+    height:60px;
+    font-size:20px;
+    font-weight: bold;
+    border:none;
+    background-color:inherit;
+    color:white;
+    border-radius:10px;
+    margin:10px;
+}
+button:hover{
+    border:solid 1px white;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.navigation_bar{
+display:flex;
+flex-direction:row;
+align-items:flex-end;
+}
+input{
+    height:32px;
+    width:280px;
+}
+footer{
+    background-color:rgb(0, 128, 128);
+    background-repeat: no-repeat;
+    background-position: center;
+    color:white;
+}
+.contact{
+    display: flex;
+    flex-direction:row;
+    flex-grow:2;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+}
+ul{
+    list-style-type:none;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:red;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    25% {opacity:0.2;}
+    50% {opacity:0.4;}
+    75% {opacity:0.8;}
+    100% {opacity:1;}
+}
+.login,.users{
+    animation: fadeIn 1s ease-in;
+}
